@@ -1,0 +1,727 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATTINY85-S IC1
+U 1 1 57213E1B
+P 6300 2550
+F 0 "IC1" H 5150 2950 50  0000 C CNN
+F 1 "ATTINY85-S" H 7300 2150 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 7250 2550 50  0001 C CIN
+F 3 "http://www.mouser.com/ds/2/36/Atmel-2586-AVR-8-bit-Microcontroller-ATtiny25-ATti-276549.pdf" H 6300 2550 50  0001 C CNN
+F 4 "556-ATTINY85-20SU" H 6300 2550 60  0001 C CNN "MouserPN"
+	1    6300 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 57213E99
+P 7900 2550
+F 0 "C1" H 7925 2650 50  0000 L CNN
+F 1 "0U1" H 7925 2450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7938 2400 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/400/lcc_commercial_general_en-837201.pdf" H 7900 2550 50  0001 C CNN
+F 4 "810-C1608X7R1E104K" H 7900 2550 60  0001 C CNN "MouserPN"
+	1    7900 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR_SMALL L1
+U 1 1 57213F51
+P 8700 2300
+F 0 "L1" H 8700 2400 50  0000 C CNN
+F 1 "260U" H 8700 2250 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8700 2300 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/54/RF2012A-765091.pdf" H 8700 2300 50  0001 C CNN
+F 4 "652-SRF2012A-261YA" H 8700 2300 60  0001 C CNN "MouserPN"
+	1    8700 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR01
+U 1 1 57214123
+P 9050 2200
+F 0 "#PWR01" H 9050 2050 50  0001 C CNN
+F 1 "+5V" H 9050 2340 50  0000 C CNN
+F 2 "" H 9050 2200 50  0000 C CNN
+F 3 "" H 9050 2200 50  0000 C CNN
+	1    9050 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5F #PWR02
+U 1 1 57214145
+P 8300 2200
+F 0 "#PWR02" H 8300 2050 50  0001 C CNN
+F 1 "+5F" H 8300 2340 50  0000 C CNN
+F 2 "" H 8300 2200 50  0000 C CNN
+F 3 "" H 8300 2200 50  0000 C CNN
+	1    8300 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5F #PWR03
+U 1 1 5721418B
+P 7900 3300
+F 0 "#PWR03" H 7900 3150 50  0001 C CNN
+F 1 "+5F" H 7900 3440 50  0000 C CNN
+F 2 "" H 7900 3300 50  0000 C CNN
+F 3 "" H 7900 3300 50  0000 C CNN
+	1    7900 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 572141A6
+P 7900 4000
+F 0 "#PWR04" H 7900 3750 50  0001 C CNN
+F 1 "GND" H 7900 3850 50  0000 C CNN
+F 2 "" H 7900 4000 50  0000 C CNN
+F 3 "" H 7900 4000 50  0000 C CNN
+	1    7900 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 572141CD
+P 8150 2900
+F 0 "#PWR05" H 8150 2650 50  0001 C CNN
+F 1 "GND" H 8150 2750 50  0000 C CNN
+F 2 "" H 8150 2900 50  0000 C CNN
+F 3 "" H 8150 2900 50  0000 C CNN
+	1    8150 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C5
+U 1 1 5721425B
+P 9450 2550
+F 0 "C5" H 9475 2650 50  0000 L CNN
+F 1 "150U" H 9475 2450 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_6.3x7.7" H 9488 2400 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/445/875105345011-540697.pdf" H 9450 2550 50  0001 C CNN
+F 4 "710-875105345011" H 9450 2550 60  0001 C CNN "MouserPN"
+	1    9450 2550
+	1    0    0    -1  
+$EndComp
+Text GLabel 3600 1850 2    60   Input ~ 0
+Input_A
+Text GLabel 2700 1850 0    60   Input ~ 0
+Input_B
+$Comp
+L GND #PWR06
+U 1 1 57214CF7
+P 4000 2200
+F 0 "#PWR06" H 4000 1950 50  0001 C CNN
+F 1 "GND" V 4000 2000 50  0000 C CNN
+F 2 "" H 4000 2200 50  0000 C CNN
+F 3 "" H 4000 2200 50  0000 C CNN
+	1    4000 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +5V #PWR07
+U 1 1 57214DCF
+P 3400 2700
+F 0 "#PWR07" H 3400 2550 50  0001 C CNN
+F 1 "+5V" V 3400 2900 50  0000 C CNN
+F 2 "" H 3400 2700 50  0000 C CNN
+F 3 "" H 3400 2700 50  0000 C CNN
+	1    3400 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 57214DD5
+P 3400 2800
+F 0 "#PWR08" H 3400 2550 50  0001 C CNN
+F 1 "GND" V 3400 2600 50  0000 C CNN
+F 2 "" H 3400 2800 50  0000 C CNN
+F 3 "" H 3400 2800 50  0000 C CNN
+	1    3400 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +5V #PWR09
+U 1 1 57214E01
+P 3400 3250
+F 0 "#PWR09" H 3400 3100 50  0001 C CNN
+F 1 "+5V" V 3400 3450 50  0000 C CNN
+F 2 "" H 3400 3250 50  0000 C CNN
+F 3 "" H 3400 3250 50  0000 C CNN
+	1    3400 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 57214E07
+P 3400 3350
+F 0 "#PWR010" H 3400 3100 50  0001 C CNN
+F 1 "GND" V 3400 3150 50  0000 C CNN
+F 2 "" H 3400 3350 50  0000 C CNN
+F 3 "" H 3400 3350 50  0000 C CNN
+	1    3400 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +5V #PWR011
+U 1 1 57214E45
+P 3400 3800
+F 0 "#PWR011" H 3400 3650 50  0001 C CNN
+F 1 "+5V" V 3400 4000 50  0000 C CNN
+F 2 "" H 3400 3800 50  0000 C CNN
+F 3 "" H 3400 3800 50  0000 C CNN
+	1    3400 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 57214E4B
+P 3400 3900
+F 0 "#PWR012" H 3400 3650 50  0001 C CNN
+F 1 "GND" V 3400 3700 50  0000 C CNN
+F 2 "" H 3400 3900 50  0000 C CNN
+F 3 "" H 3400 3900 50  0000 C CNN
+	1    3400 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +5V #PWR013
+U 1 1 57214EB5
+P 2900 2700
+F 0 "#PWR013" H 2900 2550 50  0001 C CNN
+F 1 "+5V" V 2900 2900 50  0000 C CNN
+F 2 "" H 2900 2700 50  0000 C CNN
+F 3 "" H 2900 2700 50  0000 C CNN
+	1    2900 2700
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 57214EBB
+P 2900 2800
+F 0 "#PWR014" H 2900 2550 50  0001 C CNN
+F 1 "GND" V 2900 2600 50  0000 C CNN
+F 2 "" H 2900 2800 50  0000 C CNN
+F 3 "" H 2900 2800 50  0000 C CNN
+	1    2900 2800
+	0    1    -1   0   
+$EndComp
+$Comp
+L +5V #PWR015
+U 1 1 57214ED5
+P 2900 3250
+F 0 "#PWR015" H 2900 3100 50  0001 C CNN
+F 1 "+5V" V 2900 3450 50  0000 C CNN
+F 2 "" H 2900 3250 50  0000 C CNN
+F 3 "" H 2900 3250 50  0000 C CNN
+	1    2900 3250
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 57214EDB
+P 2900 3350
+F 0 "#PWR016" H 2900 3100 50  0001 C CNN
+F 1 "GND" V 2900 3150 50  0000 C CNN
+F 2 "" H 2900 3350 50  0000 C CNN
+F 3 "" H 2900 3350 50  0000 C CNN
+	1    2900 3350
+	0    1    -1   0   
+$EndComp
+$Comp
+L +5V #PWR017
+U 1 1 57214EF5
+P 2900 3800
+F 0 "#PWR017" H 2900 3650 50  0001 C CNN
+F 1 "+5V" V 2900 4000 50  0000 C CNN
+F 2 "" H 2900 3800 50  0000 C CNN
+F 3 "" H 2900 3800 50  0000 C CNN
+	1    2900 3800
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND #PWR018
+U 1 1 57214EFB
+P 2900 3900
+F 0 "#PWR018" H 2900 3650 50  0001 C CNN
+F 1 "GND" V 2900 3700 50  0000 C CNN
+F 2 "" H 2900 3900 50  0000 C CNN
+F 3 "" H 2900 3900 50  0000 C CNN
+	1    2900 3900
+	0    1    -1   0   
+$EndComp
+$Comp
+L +5V #PWR019
+U 1 1 572150A1
+P 5750 1550
+F 0 "#PWR019" H 5750 1400 50  0001 C CNN
+F 1 "+5V" V 5750 1750 50  0000 C CNN
+F 2 "" H 5750 1550 50  0000 C CNN
+F 3 "" H 5750 1550 50  0000 C CNN
+	1    5750 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR020
+U 1 1 572150A7
+P 5750 1750
+F 0 "#PWR020" H 5750 1500 50  0001 C CNN
+F 1 "GND" V 5750 1550 50  0000 C CNN
+F 2 "" H 5750 1750 50  0000 C CNN
+F 3 "" H 5750 1750 50  0000 C CNN
+	1    5750 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +5V #PWR021
+U 1 1 572150BF
+P 7650 1550
+F 0 "#PWR021" H 7650 1400 50  0001 C CNN
+F 1 "+5V" V 7650 1750 50  0000 C CNN
+F 2 "" H 7650 1550 50  0000 C CNN
+F 3 "" H 7650 1550 50  0000 C CNN
+	1    7650 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR022
+U 1 1 572150C5
+P 7650 1750
+F 0 "#PWR022" H 7650 1500 50  0001 C CNN
+F 1 "GND" V 7650 1550 50  0000 C CNN
+F 2 "" H 7650 1750 50  0000 C CNN
+F 3 "" H 7650 1750 50  0000 C CNN
+	1    7650 1750
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2600 2600 0    60   Input ~ 0
+COPY_B1
+Text GLabel 2600 3150 0    60   Input ~ 0
+COPY_B2
+Text GLabel 2600 3700 0    60   Input ~ 0
+COPY_B3
+Text GLabel 3700 2600 2    60   Input ~ 0
+COPY_A1
+Text GLabel 3700 3150 2    60   Input ~ 0
+COPY_A2
+Text GLabel 3700 3700 2    60   Input ~ 0
+COPY_A3
+Text GLabel 4950 2600 0    60   Input ~ 0
+Input_A
+Text GLabel 4950 2300 0    60   Input ~ 0
+COPY_A1
+Text GLabel 5750 1650 2    60   Input ~ 0
+COPY_A1
+Text GLabel 4950 2400 0    60   Input ~ 0
+COPY_A2
+Text GLabel 4950 2500 0    60   Input ~ 0
+COPY_A3
+NoConn ~ 3400 2100
+NoConn ~ 4950 2700
+NoConn ~ 4950 3800
+NoConn ~ 2900 2100
+Text GLabel 4950 2800 0    60   Input ~ 0
+Reset_A
+Text GLabel 4900 1750 0    60   Input ~ 0
+Reset_A
+Text GLabel 4900 1550 0    60   Input ~ 0
+COPY_A2
+Text GLabel 4900 1650 0    60   Input ~ 0
+COPY_A3
+Text GLabel 6800 1750 0    60   Input ~ 0
+Reset_B
+Text GLabel 6800 1550 0    60   Input ~ 0
+COPY_B2
+Text GLabel 6800 1650 0    60   Input ~ 0
+COPY_B3
+Text GLabel 4950 3400 0    60   Input ~ 0
+COPY_B1
+Text GLabel 7650 1650 2    60   Input ~ 0
+COPY_B1
+Text GLabel 4950 3500 0    60   Input ~ 0
+COPY_B2
+Text GLabel 4950 3600 0    60   Input ~ 0
+COPY_B3
+Text GLabel 4950 3700 0    60   Input ~ 0
+Input_B
+Text GLabel 4950 3900 0    60   Input ~ 0
+Reset_B
+Wire Wire Line
+	7650 1550 7350 1550
+Wire Wire Line
+	7350 1750 7650 1750
+Wire Wire Line
+	5750 1550 5450 1550
+Wire Wire Line
+	5450 1750 5750 1750
+Wire Wire Line
+	5750 1650 5450 1650
+Wire Wire Line
+	4900 1550 5200 1550
+Wire Wire Line
+	5200 1650 4900 1650
+Wire Wire Line
+	4900 1750 5200 1750
+Wire Wire Line
+	7650 1650 7350 1650
+Wire Wire Line
+	6800 1550 7100 1550
+Wire Wire Line
+	7100 1650 6800 1650
+Wire Wire Line
+	6800 1750 7100 1750
+Wire Wire Line
+	7650 2800 8150 2800
+Wire Wire Line
+	8150 2700 8150 2900
+Connection ~ 8150 2800
+Wire Wire Line
+	7900 2700 7900 2800
+Connection ~ 7900 2800
+Wire Wire Line
+	7650 2300 8450 2300
+Wire Wire Line
+	7900 2300 7900 2400
+Wire Wire Line
+	8150 2300 8150 2400
+Connection ~ 7900 2300
+Wire Wire Line
+	8300 2300 8300 2200
+Connection ~ 8150 2300
+Connection ~ 8300 2300
+Wire Wire Line
+	9200 2400 9200 2300
+Wire Wire Line
+	8950 2300 9450 2300
+Wire Wire Line
+	9050 2200 9050 2300
+Connection ~ 9050 2300
+Wire Wire Line
+	9450 2300 9450 2400
+Connection ~ 9200 2300
+$Comp
+L GND #PWR023
+U 1 1 57216B44
+P 9200 2900
+F 0 "#PWR023" H 9200 2650 50  0001 C CNN
+F 1 "GND" H 9200 2750 50  0000 C CNN
+F 2 "" H 9200 2900 50  0000 C CNN
+F 3 "" H 9200 2900 50  0000 C CNN
+	1    9200 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 2900 9200 2700
+Wire Wire Line
+	9200 2800 9450 2800
+Wire Wire Line
+	9450 2800 9450 2700
+Connection ~ 9200 2800
+Wire Wire Line
+	7650 3400 7900 3400
+Wire Wire Line
+	7900 3300 7900 3500
+Connection ~ 7900 3400
+Wire Wire Line
+	7900 3800 7900 4000
+Wire Wire Line
+	7900 3900 7650 3900
+Connection ~ 7900 3900
+Wire Wire Line
+	4000 2200 3400 2200
+Wire Wire Line
+	3400 2000 3600 2000
+Wire Wire Line
+	3500 2000 3500 1850
+Wire Wire Line
+	3500 1850 3600 1850
+Connection ~ 3500 2000
+Wire Wire Line
+	3900 2000 3950 2000
+Wire Wire Line
+	3950 2000 3950 2200
+Connection ~ 3950 2200
+$Comp
+L GND #PWR024
+U 1 1 57217830
+P 2300 2200
+F 0 "#PWR024" H 2300 1950 50  0001 C CNN
+F 1 "GND" V 2300 2000 50  0000 C CNN
+F 2 "" H 2300 2200 50  0000 C CNN
+F 3 "" H 2300 2200 50  0000 C CNN
+	1    2300 2200
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R2
+U 1 1 57217836
+P 2750 2600
+F 0 "R2" V 2830 2600 50  0000 C CNN
+F 1 "100" V 2750 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2680 2600 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 2750 2600 50  0001 C CNN
+F 4 "71-CRCW0603-100-E3" V 2750 2600 60  0001 C CNN "MouserPN"
+	1    2750 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2300 2200 2900 2200
+Wire Wire Line
+	2900 2000 2700 2000
+Wire Wire Line
+	2800 2000 2800 1850
+Wire Wire Line
+	2800 1850 2700 1850
+Connection ~ 2800 2000
+Wire Wire Line
+	2400 2000 2350 2000
+Wire Wire Line
+	2350 2000 2350 2200
+Connection ~ 2350 2200
+$Comp
+L CONN_02X03 P1
+U 1 1 57217CFB
+P 3150 2100
+F 0 "P1" H 3150 2300 50  0000 C CNN
+F 1 "CONN_02X03" H 3150 1900 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_2x03" H 3150 900 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/418/NG_CD_826953_P-673710.pdf" H 3150 900 50  0001 C CNN
+F 4 "571-826953-3" H 3150 2100 60  0001 C CNN "MouserPN"
+	1    3150 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 572186D3
+P 3750 2000
+F 0 "R8" V 3830 2000 50  0000 C CNN
+F 1 "1K" V 3750 2000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3680 2000 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 3750 2000 50  0001 C CNN
+F 4 "71-CRCW0603-1.0K-E3" V 3750 2000 60  0001 C CNN "MouserPN"
+	1    3750 2000
+	0    -1   1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 57218914
+P 2550 2000
+F 0 "R1" V 2630 2000 50  0000 C CNN
+F 1 "1K" V 2550 2000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2480 2000 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 2550 2000 50  0001 C CNN
+F 4 "71-CRCW0603-1.0K-E3" V 2550 2000 60  0001 C CNN "MouserPN"
+	1    2550 2000
+	0    -1   1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 57218989
+P 3550 2600
+F 0 "R5" V 3630 2600 50  0000 C CNN
+F 1 "100" V 3550 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3480 2600 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 3550 2600 50  0001 C CNN
+F 4 "71-CRCW0603-100-E3" V 3550 2600 60  0001 C CNN "MouserPN"
+	1    3550 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R6
+U 1 1 57218A13
+P 3550 3150
+F 0 "R6" V 3630 3150 50  0000 C CNN
+F 1 "100" V 3550 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3480 3150 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 3550 3150 50  0001 C CNN
+F 4 "71-CRCW0603-100-E3" V 3550 3150 60  0001 C CNN "MouserPN"
+	1    3550 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R7
+U 1 1 57218A87
+P 3550 3700
+F 0 "R7" V 3630 3700 50  0000 C CNN
+F 1 "100" V 3550 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3480 3700 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 3550 3700 50  0001 C CNN
+F 4 "71-CRCW0603-100-E3" V 3550 3700 60  0001 C CNN "MouserPN"
+	1    3550 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R4
+U 1 1 57218B03
+P 2750 3700
+F 0 "R4" V 2830 3700 50  0000 C CNN
+F 1 "100" V 2750 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2680 3700 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 2750 3700 50  0001 C CNN
+F 4 "71-CRCW0603-100-E3" V 2750 3700 60  0001 C CNN "MouserPN"
+	1    2750 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R3
+U 1 1 57218B96
+P 2750 3150
+F 0 "R3" V 2830 3150 50  0000 C CNN
+F 1 "100" V 2750 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2680 3150 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 2750 3150 50  0001 C CNN
+F 4 "71-CRCW0603-100-E3" V 2750 3150 60  0001 C CNN "MouserPN"
+	1    2750 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_02X03 P2
+U 1 1 57218ECE
+P 3150 2700
+F 0 "P2" H 3150 2900 50  0000 C CNN
+F 1 "CONN_02X03" H 3150 2500 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_2x03" H 3150 1500 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/418/NG_CD_826953_P-673710.pdf" H 3150 1500 50  0001 C CNN
+F 4 "571-826953-3" H 3150 2700 60  0001 C CNN "MouserPN"
+	1    3150 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X03 P3
+U 1 1 57218F28
+P 3150 3250
+F 0 "P3" H 3150 3450 50  0000 C CNN
+F 1 "CONN_02X03" H 3150 3050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_2x03" H 3150 2050 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/418/NG_CD_826953_P-673710.pdf" H 3150 2050 50  0001 C CNN
+F 4 "571-826953-3" H 3150 3250 60  0001 C CNN "MouserPN"
+	1    3150 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X03 P4
+U 1 1 57218F89
+P 3150 3800
+F 0 "P4" H 3150 4000 50  0000 C CNN
+F 1 "CONN_02X03" H 3150 3600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_2x03" H 3150 2600 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/418/NG_CD_826953_P-673710.pdf" H 3150 2600 50  0001 C CNN
+F 4 "571-826953-3" H 3150 3800 60  0001 C CNN "MouserPN"
+	1    3150 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L AVR-ISP-6 P5
+U 1 1 57218FEB
+P 5350 1650
+F 0 "P5" H 5350 1900 50  0000 C CNN
+F 1 "CONN_02X03" H 5350 1450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_2x03" H 5350 450 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/418/NG_CD_826953_P-673710.pdf" H 5350 450 50  0001 C CNN
+F 4 "571-826953-3" H 5350 1650 60  0001 C CNN "MouserPN"
+	1    5350 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L AVR-ISP-6 P6
+U 1 1 57219163
+P 7250 1650
+F 0 "P6" H 7250 1900 50  0000 C CNN
+F 1 "CONN_02X03" H 7250 1450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_2x03" H 7250 450 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/418/NG_CD_826953_P-673710.pdf" H 7250 450 50  0001 C CNN
+F 4 "571-826953-3" H 7250 1650 60  0001 C CNN "MouserPN"
+	1    7250 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 57219306
+P 8150 2550
+F 0 "C3" H 8175 2650 50  0000 L CNN
+F 1 "4U7" H 8175 2450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 8188 2400 50  0001 C CNN
+F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 8150 2550 50  0001 C CNN
+F 4 "581-12063C475KAT2A" H 8150 2550 60  0001 C CNN "MouserPN"
+	1    8150 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 572194BF
+P 9200 2550
+F 0 "C4" H 9225 2650 50  0000 L CNN
+F 1 "4U7" H 9225 2450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 9238 2400 50  0001 C CNN
+F 3 "http://datasheets.avx.com/X7RDielectric.pdf" H 9200 2550 50  0001 C CNN
+F 4 "581-12063C475KAT2A" H 9200 2550 60  0001 C CNN "MouserPN"
+	1    9200 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L ATTINY85-S IC2
+U 1 1 572197F2
+P 6300 3650
+F 0 "IC2" H 5150 4050 50  0000 C CNN
+F 1 "ATTINY85-S" H 7300 3250 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 7250 3650 50  0001 C CIN
+F 3 "http://www.mouser.com/ds/2/36/Atmel-2586-AVR-8-bit-Microcontroller-ATtiny25-ATti-276549.pdf" H 6300 3650 50  0001 C CNN
+F 4 "556-ATTINY85-20SU" H 6300 3650 60  0001 C CNN "MouserPN"
+	1    6300 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5721996E
+P 7900 3650
+F 0 "C2" H 7925 3750 50  0000 L CNN
+F 1 "0U1" H 7925 3550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7938 3500 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/400/lcc_commercial_general_en-837201.pdf" H 7900 3650 50  0001 C CNN
+F 4 "810-C1608X7R1E104K" H 7900 3650 60  0001 C CNN "MouserPN"
+	1    7900 3650
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
