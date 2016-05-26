@@ -1,8 +1,8 @@
 
-AVRASM ver. 2.1.57  C:\Users\jbanks2\Documents\Projects\sicDRONE\signal_splitter_avr\asm\AssemblerApplication1\AssemblerApplication1\main.asm Tue Apr 26 13:56:58 2016
+AVRASM ver. 2.1.57  C:\Users\jbanks2\Documents\Projects\TinyCopyCat\Code\AssemblerApplication1\AssemblerApplication1\main.asm Wed May 11 14:25:26 2016
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATtiny_DFP\1.0.68\avrasm\inc\tn85def.inc'
-C:\Users\jbanks2\Documents\Projects\sicDRONE\signal_splitter_avr\asm\AssemblerApplication1\AssemblerApplication1\main.asm(17): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATtiny_DFP\1.0.68\avrasm\inc\tn85def.inc'
+C:\Users\jbanks2\Documents\Projects\TinyCopyCat\Code\AssemblerApplication1\AssemblerApplication1\main.asm(17): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATtiny_DFP\1.0.68\avrasm\inc\tn85def.inc'
                  
                  ;
                  
